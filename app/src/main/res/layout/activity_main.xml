@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/activity_main_top_tab"/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/divider_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fragmentBackground">
+
+        <LinearLayout
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/mall_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/frame_mall_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="模板商城"
+                        android:textColor="@color/black"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/draft_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/draft_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/frame_draft_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="草稿箱"
+                        android:textColor="@color/black"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/people_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/people_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/frame_people_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="个人中心"
+                        android:textColor="@color/black"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
